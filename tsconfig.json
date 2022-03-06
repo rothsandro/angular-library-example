@@ -3,9 +3,11 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
+      "@mycomp/ui-sdk/*": [
+        "projects/mycomp/ui-sdk/*",
+      ],
       "@mycomp/ui-sdk": [
-        "dist/mycomp/ui-sdk/mycomp-ui-sdk",
-        "dist/mycomp/ui-sdk"
+        "projects/mycomp/ui-sdk",
       ]
     },
     "baseUrl": "./",

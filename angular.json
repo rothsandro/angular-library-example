@@ -3,5 +3,37 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "@mycomp/ui-sdk": {
+      "projectType": "library",
+      "root": "projects/mycomp/ui-sdk",
+      "sourceRoot": "projects/mycomp/ui-sdk/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/mycomp/ui-sdk/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/mycomp/ui-sdk/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/mycomp/ui-sdk/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/mycomp/ui-sdk/src/test.ts",
+            "tsConfig": "projects/mycomp/ui-sdk/tsconfig.spec.json",
+            "karmaConfig": "projects/mycomp/ui-sdk/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "@mycomp/ui-sdk"
 }

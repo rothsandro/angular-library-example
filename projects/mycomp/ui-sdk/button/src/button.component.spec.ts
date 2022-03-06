@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { I18nModule } from '@mycomp/ui-sdk/i18n';
 import { ButtonComponent } from './button.component';
 
 describe('ButtonComponent', () => {
@@ -8,6 +9,7 @@ describe('ButtonComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ButtonComponent],
+      imports: [I18nModule]
     }).compileComponents();
   });
 

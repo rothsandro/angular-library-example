@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { UiSdkComponent } from './ui-sdk.component';
+import { I18nModule } from '@mycomp/ui-sdk/i18n';
 
 describe('UiSdkComponent', () => {
   let component: UiSdkComponent;
@@ -8,9 +8,9 @@ describe('UiSdkComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ UiSdkComponent ]
-    })
-    .compileComponents();
+      declarations: [UiSdkComponent],
+      imports: [I18nModule],
+    }).compileComponents();
   });
 
   beforeEach(() => {

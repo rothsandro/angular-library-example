@@ -4,17 +4,13 @@ import { Component, OnInit } from '@angular/core';
   selector: 'lib-ui-sdk',
   template: `
     <p>
-      ui-sdk works!
+      {{ 'hello world' | translate }}
     </p>
   `,
-  styles: [
-  ]
+  styles: [],
 })
 export class UiSdkComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

@@ -3,7 +3,15 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "../../out-tsc/app",
-    "types": []
+    "types": [],
+    "paths": {
+      "@mycomp/ui-sdk/*": [
+        "dist/mycomp/ui-sdk/*"
+      ],
+      "@mycomp/ui-sdk": [
+        "dist/mycomp/ui-sdk"
+      ]
+    }
   },
   "files": [
     "src/main.ts",

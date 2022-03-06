@@ -1,12 +1,13 @@
 import { TestBed } from '@angular/core/testing';
+import { UiSdkModule } from '@mycomp/ui-sdk';
+import { ButtonModule } from '@mycomp/ui-sdk/button';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
+      declarations: [AppComponent],
+      imports: [UiSdkModule, ButtonModule],
     }).compileComponents();
   });
 
@@ -26,6 +27,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('showcase app is running!');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Showcase');
   });
 });

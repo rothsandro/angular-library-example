@@ -1,24 +1,7 @@
-# UiSdk
+# Building an Angular Library with multiple entry points
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
+This repo is a demo of creating an Angular library with multiple entry points and a showcase app. Please read my blog post about this topic:
 
-## Code scaffolding
+[sandroroth.com/blog/angular-library](https://sandroroth.com/blog/angular-library).
 
-Run `ng generate component component-name --project ui-sdk` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ui-sdk`.
-> Note: Don't forget to add `--project ui-sdk` or else it will be added to the default project in your `angular.json` file. 
-
-## Build
-
-Run `ng build ui-sdk` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Publishing
-
-After building your library with `ng build ui-sdk`, go to the dist folder `cd dist/ui-sdk` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test ui-sdk` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+*Note: The components in this project are only for demo purposes. Never ever build a button component this way!*

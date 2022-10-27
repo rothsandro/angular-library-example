@@ -6,14 +6,17 @@
     "start": "run-p lib:watch showcase:start-waiton",
     "build": "run-s lib:build showcase:build",
     "test": "run-p lib:test showcase:test",
+    "test-coverage": "run-p lib:test-coverage showcase:test-coverage",
     "lib:build": "ng build @mycomp/ui-sdk",
     "lib:watch": "ng build @mycomp/ui-sdk --watch --configuration development",
     "lib:test": "ng test @mycomp/ui-sdk",
+    "lib:test-coverage": "ng test @mycomp/ui-sdk --no-watch --code-coverage",
     "showcase:start-waiton": "wait-on dist/mycomp/ui-sdk/package.json && npm run showcase:start",
     "showcase:start": "ng serve showcase",
     "showcase:build": "ng build showcase",
     "showcase:watch": "ng build showcase --watch --configuration development",
-    "showcase:test": "ng test showcase"
+    "showcase:test": "ng test showcase",
+    "showcase:test-coverage": "ng test showcase --no-watch --code-coverage"
   },
   "private": true,
   "dependencies": {

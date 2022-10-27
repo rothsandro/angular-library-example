@@ -6,7 +6,7 @@
     "@mycomp/ui-sdk": {
       "projectType": "library",
       "root": "projects/mycomp/ui-sdk",
-      "sourceRoot": "projects/mycomp/ui-sdk/src",
+      "sourceRoot": "projects/mycomp/ui-sdk",
       "prefix": "lib",
       "architect": {
         "build": {
@@ -57,9 +57,7 @@
               "projects/showcase/src/favicon.ico",
               "projects/showcase/src/assets"
             ],
-            "styles": [
-              "projects/showcase/src/styles.css"
-            ],
+            "styles": ["projects/showcase/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -124,9 +122,7 @@
               "projects/showcase/src/favicon.ico",
               "projects/showcase/src/assets"
             ],
-            "styles": [
-              "projects/showcase/src/styles.css"
-            ],
+            "styles": ["projects/showcase/src/styles.css"],
             "scripts": []
           }
         }

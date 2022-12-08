@@ -3,12 +3,8 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-      "@mycomp/ui-sdk/*": [
-        "projects/mycomp/ui-sdk/*"
-      ],
-      "@mycomp/ui-sdk": [
-        "projects/mycomp/ui-sdk"
-      ]
+      "@mycomp/ui-sdk/*": ["projects/mycomp/ui-sdk/*"],
+      "@mycomp/ui-sdk": ["projects/mycomp/ui-sdk"]
     },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
@@ -25,12 +21,9 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "ES2022",
-    "module": "es2020",
-    "lib": [
-      "es2020",
-      "dom"
-    ],
-    "useDefineForClassFields": false
+    "module": "ES2022",
+    "useDefineForClassFields": false,
+    "lib": ["ES2022", "dom"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

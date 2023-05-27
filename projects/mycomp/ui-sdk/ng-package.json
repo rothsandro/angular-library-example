@@ -2,6 +2,6 @@
   "$schema": "../../../node_modules/ng-packagr/ng-package.schema.json",
   "dest": "../../../dist/mycomp/ui-sdk",
   "lib": {
-    "entryFile": "public-api.ts"
+    "entryFile": "./public-api.ts"
   }
 }

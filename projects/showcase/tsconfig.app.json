@@ -2,22 +2,13 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../out-tsc/app",
-    "types": [],
     "paths": {
-      "@mycomp/ui-sdk/*": [
-        "dist/mycomp/ui-sdk/*"
-      ],
-      "@mycomp/ui-sdk": [
-        "dist/mycomp/ui-sdk"
-      ]
-    }
+      "@mycomp/ui-sdk/*": ["dist/mycomp/ui-sdk/*"],
+      "@mycomp/ui-sdk": ["dist/mycomp/ui-sdk"]
+    },
+    "outDir": "../../out-tsc/app",
+    "types": []
   },
-  "files": [
-    "src/main.ts",
-    "src/polyfills.ts"
-  ],
-  "include": [
-    "src/**/*.d.ts"
-  ]
+  "files": ["src/main.ts"],
+  "include": ["src/**/*.d.ts"]
 }

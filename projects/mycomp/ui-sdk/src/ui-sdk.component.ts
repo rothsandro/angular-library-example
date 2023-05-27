@@ -1,16 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'lib-ui-sdk',
+  standalone: true,
+  imports: [CommonModule],
   template: `
     <p>
-      {{ 'hello world' | translate }}
+      ui-sdk works!
     </p>
   `,
-  styles: [],
+  styles: [
+  ]
 })
-export class UiSdkComponent implements OnInit {
-  constructor() {}
+export class UiSdkComponent {
 
-  ngOnInit(): void {}
 }

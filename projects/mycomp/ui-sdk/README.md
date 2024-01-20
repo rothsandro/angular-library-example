@@ -1,6 +1,6 @@
 # UiSdk
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
+This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.0.
 
 ## Code scaffolding
 

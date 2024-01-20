@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { UiSdkComponent } from '@mycomp/ui-sdk';
+import { RouterOutlet } from '@angular/router';
 import { ButtonComponent } from '@mycomp/ui-sdk/button';
-import { TranslatePipe } from '@mycomp/ui-sdk/i18n';
+import { UiSdkComponent } from '@mycomp/ui-sdk';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, UiSdkComponent, ButtonComponent, TranslatePipe],
+  imports: [RouterOutlet, UiSdkComponent, ButtonComponent],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'showcase';

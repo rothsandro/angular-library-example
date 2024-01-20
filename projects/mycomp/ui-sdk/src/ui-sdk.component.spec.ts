@@ -6,10 +6,11 @@ describe('UiSdkComponent', () => {
   let component: UiSdkComponent;
   let fixture: ComponentFixture<UiSdkComponent>;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      imports: [UiSdkComponent]
-    });
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [UiSdkComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(UiSdkComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

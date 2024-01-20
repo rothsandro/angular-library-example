@@ -1,17 +1,15 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'lib-ui-sdk',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   template: `
     <p>
       ui-sdk works!
     </p>
   `,
-  styles: [
-  ]
+  styles: ``
 })
 export class UiSdkComponent {
 

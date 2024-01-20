@@ -3,10 +3,9 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-      "@mycomp/ui-sdk/*": ["projects/mycomp/ui-sdk/*"],
-      "@mycomp/ui-sdk": ["projects/mycomp/ui-sdk"]
+      "@mycomp/ui-sdk/*": ["./projects/mycomp/ui-sdk/*"],
+      "@mycomp/ui-sdk": ["./projects/mycomp/ui-sdk"]
     },
-    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -14,9 +13,10 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
     "sourceMap": true,
     "declaration": false,
-    "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,

@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { UiSdkComponent } from './ui-sdk.component';
 
 describe('UiSdkComponent', () => {
